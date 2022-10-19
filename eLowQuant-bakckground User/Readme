@@ -1,3 +1,5 @@
 eDNA Low copy number Quantification adjusted for Background.
 
-This folder contains a user-ready version of the original R code and training resources to get started on using eLowQuant-background for any appropriate input data. It contains a video outline pdf, R, Rmd and csv file.  Watch the eLowQuant training video to learn how to implement the eLowQuant code for yourself here: https://onlineacademiccommunity.uvic.ca/helbinglab/edna/.
+This folder contains a user-ready version of the original R code and training resources to get started on using eLowQuant-background 
+for any appropriate input data. It contains R, Rmd and csv files.  Watch the eLowQuant training video to learn how 
+to implement the related eLowQuant code for yourself here: https://onlineacademiccommunity.uvic.ca/helbinglab/edna/.
