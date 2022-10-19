@@ -6,3 +6,5 @@ Hocking, M.D.; MacAdams, J.C.; Allison, M.J.; Bergman, L.C.; Sneiderman, R.; Koo
 eLowHighQuant-fishes-(date).Rmd - R Markdown file used for computations for the paper  
 eLowHighQuant-fishes-(date).html - html rendered file from the Rmd file
 
+To download and view the html file eLowHighQuant-fishes-(date).html, click on the file name, then click the Download button.  A page of html code will be displayed.  Right-click on that page, and choose 'Save as' and save the file into the folder of your choice.  Double-clicking on the saved file will display the html file correctly.
+
