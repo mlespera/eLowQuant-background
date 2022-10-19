@@ -3,14 +3,14 @@ title: "fishes:  Establishing the signal above the noise"
 author: "copyright Mary Lesperance"
 date: "4/10/2022"
 output:
-  html_document:
-    number_sections: yes
+  pdf_document:
     toc: yes
     toc_depth: 3
   word_document:
     toc: yes
     toc_depth: 3
-  pdf_document:
+  html_document:
+    number_sections: yes
     toc: yes
     toc_depth: 3
 geometry: margin=.5in
@@ -1590,6 +1590,7 @@ for(i in 1:nTargets) {
   lines(ul10SQ, fitted(cq.var.lm))  
 cat('Model for the variances/weights for inverse regression which can be used to estimate weights for a new sample.', "\n")
 
+
 # OLS and WLS regression for calibration model
 #  the values in weights being inversely proportional to the variances
   Cj <- lm(Cq ~ L10.SQ, data=DATz.df, subset=indcal)  #OLS
@@ -1641,6 +1642,8 @@ cbind(ul10SQ, XwhatlimL, Xwhat, XwhatlimU) #true SQ, Lower Limit, Estimated, Upp
   axis(1, at=seq(-1 ,5), labels=paste(round(10^seq(-1,5), 1)) )
   abline(Cjw.ab, col=2)
   
+   cat("\n\n")
+  
 #Hatchery plot, calibration plot Transformed Ct
   with(DATz.df[indcal,], plot(L10.SQ, CqT, 
           ylab="Transformed Ct", xlab="Starting copy number per reaction", 
@@ -1649,6 +1652,8 @@ cbind(ul10SQ, XwhatlimL, Xwhat, XwhatlimU) #true SQ, Lower Limit, Estimated, Upp
           xaxt="n", las=1))
   axis(1, at=seq(-1 ,5), labels=paste(round(10^seq(-1,5), 1)) )
   abline(c(50, 0) - Cjw.ab, col=1)
+  
+   cat("\n\n")
 
 #Confirm CqT weighted model with Cjws weighted model for Cq 
   jwlmT <- lm(CqT ~ L10.SQ, weights=1/Cq.var, data=DATz.df, subset=indcal)
@@ -1957,6 +1962,8 @@ with(flow.FTBinom, points(log2(flow.FTBinom$FlowN), log2(SQ0),
 
 title('Log2 Copy Number versus log2 Flow')
 
+ cat("\n\n")
+
 #Plot on copy number by log_2 flow scale
 with(flow.FTCq, plot(log2(flow.FTCq$FlowN), XXwhat, ylab='Copy number',
      xlab=expression(Log[2]~(Flow)), 
@@ -1973,6 +1980,7 @@ with(flow.FTBinom, legend('topright', c('Tank 19', 'Tank 20', 'Tank 21', 'Tank 2
 
 title('Copy Number versus log2 Flow')
 
+ cat("\n\n")
 
 ```
 
