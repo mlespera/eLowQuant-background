@@ -3,3 +3,7 @@ eDNA Low copy number Quantification adjusted for Background.
 This folder contains a user-ready version of the original R code and training resources to get started on using eLowQuant-background 
 for any appropriate input data. It contains R, Rmd and csv files.  Watch the eLowQuant training video to learn how 
 to implement the related eLowQuant code for yourself here: https://onlineacademiccommunity.uvic.ca/helbinglab/edna/.
+
+To download and view the html file eLowQuant-Background-(date).html:
+Method 1: Click on the file name, then click the Download button. A page of html code will be displayed. Right-click on that page, and choose 'Save as' and save the file into the folder of your choice. Double-clicking on the saved file will display the html file correctly.
+Method 2: Click on Code button and choose Download zip. This will download a zip file of all of the files and you can open any file from the resulting folder.
